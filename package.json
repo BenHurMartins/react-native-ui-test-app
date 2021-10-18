@@ -26,6 +26,7 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/react-native": "^7.2.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.64.5",
     "@types/react-test-renderer": "^16.9.2",
@@ -52,6 +53,9 @@
     ],
     "setupFiles": [
       "<rootDir>/jest/setup.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest/setupAfterEnv.js"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?@?react-native|@react-native-community|@react-navigation)"

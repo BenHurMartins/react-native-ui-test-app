@@ -2,7 +2,7 @@
 import React from 'react';
 import {render as rtlRender} from '@testing-library/react-native';
 import {Provider} from 'react-redux';
-import defaultStore from './src/store';
+import defaultStore from '../src/store';
 
 // Overriding the render method
 function render(ui, {store = defaultStore, renderOptions} = {}) {
